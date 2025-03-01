@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MICROTECH</title>
+    <link rel="stylesheet" href="microtech.css">
+    <script src="microtech.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('products')">Products</a></li>
+                <li class="logo"><img src="Img/logo.webp" alt="MICROTECH Logo"></li>
+                <li><a href="#" onclick="showSection('about')">About</a></li>
+                <li><a href="#" onclick="showSection('services')">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="main">
+        <div class="main-content">
+            <h1>Reliable Hardware for a Smarter World.</h1>
+            <p>Delivering high-performance, durable, and cutting-edge technology to power businesses, gamers, and innovators.</p>
+            <a href="#" onclick="showSection('products')" class="btn">View Our Products</a>
+        </div>
+        <div class="main-image">
+            <img src="Img/image.png" alt="Device">
+        </div>
+    </section>
+
+
+    <section id="services" class="services-layout" style="display: none;">
+        <h2>Our services</h2>
+        <div class="services-grid">
+            <div class="services-item">Product 1</div>
+            <div class="services-item">Product 2</div>
+            <div class="services-item">Product 3</div>
+        </div>
+    </section>
+
+    <section id="about" class="about-layout" style="display: none;">
+        <h2>About Us</h2>
+        <p>Learn more about MICROTECH and our mission.</p>
+    </section>
+
+   <!-- Products Section -->
+<section id="products" class="products-layout">
+    <!-- Sidebar with categories (Left Side) -->
+    <div class="sidebar">
+        <button class="category-button active" onclick="filterCategory('all')">All Products</button>
+        <button class="category-button" onclick="filterCategory('gps')">GPS Tracking</button>
+        <button class="category-button" onclick="filterCategory('rfid')">RFID</button>
+        <button class="category-button" onclick="filterCategory('network')">Networking Devices</button>
+        <button class="category-button" onclick="filterCategory('accessories')">Accessories</button>
+    </div>
+
+    <!-- Product Grid (Right Side) -->
+    <div class="products-container">
+        <div class="products-item gps">
+            <img src="img/gpstracker.webp" alt="GPS Tracker" class="products-image">
+            <div class="products-content">
+                <h3>GPS Tracker</h3>
+                <p>Real-time GPS tracking for vehicles and pets.</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="book-button">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="products-item rfid">
+            <img src="Img/wallet.webp" alt="RFID Blocking Wallet" class="products-image">
+            <div class="products-content">
+                <h3>RFID Blocking Wallet</h3>
+                <p>Protect your cards from unauthorized scanning.</p>
+                <div class="rating">⭐⭐⭐⭐</div>
+                <button class="book-button">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="products-item network">
+            <img src="Img/router.webp" alt="WiFi Router" class="products-image">
+            <div class="products-content">
+                <h3>High-Speed WiFi Router</h3>
+                <p>Fast and secure internet connection.</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="book-button">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="products-item accessories">
+            <img src="Img/accessories.webp" alt="Wireless Headphones" class="products-image">
+            <div class="products-content">
+                <h3>Car Relay GPS Tracker Device</h3>
+                <p>Car Relay GPS Tracker Device Locator Anti-theft Monitoring Cut Off Oil System.</p>
+                <div class="rating">⭐⭐⭐⭐</div>
+                <button class="book-button">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="products-item gps">
+            <img src="Img/dashcam.webp" alt="Dash Cam" class="products-image">
+            <div class="products-content">
+                <h3>Car Dash Cam</h3>
+                <p>Record every moment while driving.</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="book-button">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="products-item rfid">
+            <img src="Img/passportHolder.webp" alt="RFID Passport Cover" class="products-image">
+            <div class="products-content">
+                <h3>RFID Passport Cover</h3>
+                <p>Keep your travel documents safe.</p>
+                <div class="rating">⭐⭐⭐⭐</div>
+                <button class="book-button">Buy Now</button>
+            </div>
+        </div>
+    </div>
+</section>
+            </div>
+        </div>
+    </section>
+    
+            </div>
+        </div>
+    </section>
+</body>
+</html>

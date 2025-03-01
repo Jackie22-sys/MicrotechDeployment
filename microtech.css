@@ -1,0 +1,244 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #022e43;
+    padding: 5px 0;
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+nav ul li {
+    margin: 0 40px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 120px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.logo img {
+    height: 120px;
+    margin: 0 15px;
+}
+
+/* Main Section Styles */
+.main {
+    background-image: url("Img/background.png");
+    background-size: cover; /* Ensures the image covers the whole area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repetition */
+    color: white;
+    text-align: left;
+    padding: 100px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.main-content {
+    max-width: 600px;
+    margin-left: 50px;
+}
+
+.main h1 {
+    font-size: 3em;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.main p {
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Right-side image */
+.main img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 90%; /* Full height */
+    width: auto;
+    object-fit: cover;
+}
+
+
+/* services Section */
+.services-layout {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 50px;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.services-item {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+/* About Section */
+.about-layout {
+    background: #ffdfba;
+    text-align: center;
+    padding: 50px;
+}
+
+/* products Section */
+.products-layout {
+    background-image: url("Img/bgg.webp");
+    background-size: cover; /* Ensures the image covers the whole area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repetition */
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    color: white;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+/* Sidebar (Left Side) */
+.sidebar {
+    flex: 1;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.category-button {
+    padding: 12px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    background: #ffffff;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.category-button:hover {
+    background: #FFD700;
+}
+
+.category-button.active {
+    background: #FFD700;
+    color: black;
+}
+
+/* Products Grid (Right Side) */
+.products-container {
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 50px;
+    width: 80%;
+}
+
+/* Product Cards */
+.products-item {
+    background: #1A1D23;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.products-item:hover {
+    transform: scale(1.05);
+}
+
+.products-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.rating {
+    color: gold;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.book-button {
+    background: #FFD700;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.book-button:hover {
+    background: #FFB700;
+}
